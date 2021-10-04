@@ -1,0 +1,455 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,
+body {
+
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+#wrap {
+	padding-bottom: 30px;
+}
+
+#header{
+	background-image: url(../images/bg_header.jpg);
+	background-repeat: repeat-x;
+	background-position: left top;
+	z-index: 100000;
+	position:fixed;
+	width:1024px;
+}
+
+#top-bar {
+  background-color: #263218;
+  color: #fff;
+
+}
+
+#top-bar a{
+  margin-top:5px;
+}
+
+.top-bar-pass{
+						color:white; text-decoration:none;border-right:1px solid #ededed;padding-right:5px;
+					}
+					
+					.top-bar-pass hover{
+						color:#ddd;text-decoration:none;border-right:1px solid #ededed;padding-right:5px;
+					}
+					
+					.top-bar-logout{
+						color:white;text-decoration:none;
+					}
+					.top-bar-logout hover{
+						color:#ddd;text-decoration:none;
+					}
+					#top-bar a:hover{ text-decoration:none;color:#EDEDED;}
+
+#header h1{
+	background-image: url(../images/top1.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	text-indent: -9999px;
+	height: 86px;
+	width: 745px;
+	/*display: inline-block;*/	
+	padding: 0;
+	margin: 0;
+}
+
+div .form-h2{
+	margin:0;
+	padding: 0;
+	font-size: 20px;
+	color: #435443;
+	float:left;
+	width:400px;
+	text-align:left;
+}
+
+form hr{
+	margin-top: 3px; 
+	margin-bottom: 10px;
+	border: 0;
+	border-top: 1px dotted #435443;
+}
+
+#nav{
+	height: 35px;
+	padding-top: 5px;
+	background-image: url(../images/bg_nav.jpg);
+	background-repeat: repeat-x;
+	background-position: left top;
+	box-shadow: 0 2px 10px;
+	border-radius: 0 0 5px 5px;
+	position: relative;
+}
+
+#nav ul{
+	height: 27px;
+	display: inline;
+}
+
+#nav ul li{
+	float: left;
+	line-height: 22px;
+	display: inline-block;
+	-webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#nav ul li a{
+	color: #000;
+	padding: 0px 15px;
+	line-height: 30px;
+	display: block;
+	border-right:1px solid #99AC99;
+	font-size: 15px;
+}
+
+#nav ul li a:hover{
+	text-decoration: none;
+	background-color: #C0CEB5;
+}
+/*---------*/
+#nav ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 35px;
+  width: 200px;
+  display: none;
+  visibility: hidden;
+   -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+  z-index: -1;
+}
+#nav ul li ul li { 
+  background: #fff; 
+  display: block;
+  float:left;
+  width:200px;opacity:0.9;
+}
+#nav ul li ul li a { 
+  background: #DBE1D3; 
+  display: block; 
+  color: #000;
+  
+}
+#nav ul li ul li:hover { background: #90AA91; }
+#nav ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+/*---------*/
+
+
+
+#main {
+	margin-top: 20px;
+}
+
+
+.login{
+	padding: 0px 0;
+}
+
+#footer {
+  background-color: #435443;
+  box-shadow: 0 0 5px;
+  clear: both;
+  color: white;
+  line-height: 24px;
+  margin-top: -24px;
+  padding: 10px;
+  position: relative;
+}
+
+.btn-primary{
+	background-color: #5E6C5B;
+	border-color: #435443;	
+}
+
+.btn-primary:hover{
+	background-color: #DBE1D3;
+	color: #435443;
+}
+
+a {
+	color: #428bca;
+	text-decoration: none;
+}
+
+a:hover, a:focus {
+	/* color: #2a6496; */
+	text-decoration: underline;
+}
+
+.btn-primary1{
+	background-color: #5E6C5B;
+	border-color: #435443;
+	color: #fff;
+	float: right;
+	margin-right: 60px;
+}
+
+.btn-primary1:hover{
+	background-color: #DBE1D3;
+	color: #435443;
+}
+
+
+
+.btn-primary1 a {
+	color: #428bca;
+	text-decoration: none;
+}
+
+.btn-primary1 a:hover, .btn-primary1 a:focus {
+	/* color: #2a6496; */
+	text-decoration: underline;
+}
+
+#mobile-no div span{
+	display: inline-block !important;
+	float: left;
+	vertical-align: middle !important;
+	line-height: 1.42857143 !important;
+	padding: 6px 12px;
+}
+	
+#mobile-no div select{
+	padding-left: 0px;
+	padding-right: 0px;		
+}
+
+#mobile-no div.opcode{
+	padding-right: 0 !important;
+	margin-right: 0 !important;
+}
+
+@media(max-width:767px){}
+@media(min-width:768px){
+	.spouse-name{
+		width: 78% !important;
+		margin-left: 19px;
+	}	
+
+	.handicap-other{
+		width: 41%;
+		display: inline-block;
+		margin-left: 10px;
+	}
+
+	#mobile-no div .mno{
+		margin-left: 25px;
+		width: 71% !important;
+	}
+
+
+}
+@media(min-width:992px){
+	.spouse-name{
+		width: 80% !important;
+		margin-left: 12px;
+	}	
+	
+	.handicap-other{
+		width: 46%;
+		display: inline-block;
+		margin-left: 10px;
+	}
+
+	#mobile-no div .mno{
+		margin-left: 20px;
+		width: 74% !important;
+	}
+	
+}
+@media(min-width:1200px){
+	.spouse-name{
+		width: 82% !important;
+		margin-left: 0px;		
+	}	
+
+	.handicap-other{
+		width: 96% !important;
+		display: inline-block;
+		margin-left: 10px;
+	}
+
+	#mobile-no div .mno{
+		margin-left: 20px;
+		width: 73% !important;
+	}
+
+}
+
+
+/*
+### UI Developed by ###
+Md. Harun Or Rosid (suman)
+Technical Expert
+IDEA, Election Commission Secretariat.
+Cell: 01712 822206
+email: suman.dakghor@gmail.com
+*/
+
+
+/*************** Bootstrap **************************/
+
+.form-group{
+	margin-bottom: 5px;
+}
+
+.help-block {
+	margin-top: 0px;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+position: relative;
+min-height: 1px;
+padding-right: 15px;
+padding-left: 15px;
+padding-left: 0px;
+}
+
+.radio-inline+.radio-inline, .checkbox-inline+.checkbox-inline {
+margin-top: 0;
+margin-left: 10px;
+}
+
+.popover{
+    width:200px;
+    height:auto;    
+}
+
+/*For Switch Start*/
+
+.switch-label {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 56px;
+  height: 20px;
+  padding: 3px;
+  background-color: white;
+  border-radius: 18px;
+  box-shadow: inset 0 -1px white, inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  background-image: -webkit-linear-gradient(top, #eeeeee, white 25px);
+  background-image: -moz-linear-gradient(top, #eeeeee, white 25px);
+  background-image: -o-linear-gradient(top, #eeeeee, white 25px);
+  background-image: linear-gradient(to bottom, #eeeeee, white 25px);
+}
+
+.switch-input-checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.switch-label-checkbox {
+  position: relative;
+  display: block;
+  height: inherit;
+  font-size: 13px;
+  text-transform: uppercase;
+  background: red;
+  border-radius: inherit;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+  -webkit-transition: 0.15s ease-out;
+  -moz-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  -webkit-transition-property: opacity background;
+  -moz-transition-property: opacity background;
+  -o-transition-property: opacity background;
+  transition-property: opacity background;
+}
+.switch-label-checkbox:before, .switch-label-checkbox:after {
+  position: absolute;
+  top: 50%;
+  margin-top: -.5em;
+  line-height: 1;
+  -webkit-transition: inherit;
+  -moz-transition: inherit;
+  -o-transition: inherit;
+  transition: inherit;
+}
+.switch-label-checkbox:before {
+  content: attr(data-off);
+  right: 11px;
+  color: #fff;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+}
+.switch-label-checkbox:after {
+  content: attr(data-on);
+  left: 11px;
+  color: white;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+}
+.switch-input-checkbox:checked ~ .switch-label-checkbox {
+  background: #47a8d8;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.switch-input-checkbox:checked ~ .switch-label-checkbox:before {
+  opacity: 0;
+}
+.switch-input-checkbox:checked ~ .switch-label-checkbox:after {
+  opacity: 1;
+}
+
+.switch-handle-checkbox {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  background-image: -webkit-linear-gradient(top, white 40%, #f0f0f0);
+  background-image: -moz-linear-gradient(top, white 40%, #f0f0f0);
+  background-image: -o-linear-gradient(top, white 40%, #f0f0f0);
+  background-image: linear-gradient(to bottom, white 40%, #f0f0f0);
+  -webkit-transition: left 0.15s ease-out;
+  -moz-transition: left 0.15s ease-out;
+  -o-transition: left 0.15s ease-out;
+  transition: left 0.15s ease-out;
+}
+.switch-handle-checkbox:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -6px 0 0 -6px;
+  width: 12px;
+  height: 12px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+  background-image: -webkit-linear-gradient(top, #eeeeee, white);
+  background-image: -moz-linear-gradient(top, #eeeeee, white);
+  background-image: -o-linear-gradient(top, #eeeeee, white);
+  background-image: linear-gradient(to bottom, #eeeeee, white);
+}
+.switch-input-checkbox:checked ~ .switch-handle-checkbox {
+  left: 40px;
+  box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.switch-green > .switch-input-checkbox:checked ~ .switch-label-checkbox {
+  background: #4fb845;
+}
+/*For Switch End*/
